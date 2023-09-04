@@ -100,10 +100,119 @@ header {
 
 
 /* BOTONES BANCOS */
+.botonesBanco {
+    width: 50px;
+    height: 50px;
+}
 
+.colorCard {
+    width: 25rem;
+    margin-top: 30px;
+    border-radius: 1rem;
+}
+.dropdown {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.dropdown-menu {
+    width: 25rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+.dropdown-menu:hover {
+    background-color: gray;
+
+} 
+.dropdown-item {
+    text-decoration: none;
+
+}
+.dropdown-item:hover{
+    background-color: gray;
+}
 /* OFERTAS/DESCUENTOS */
+.ofertas-descuentos {
+    text-align: center;
+    text-decoration:underline ;
+}
+.categorias {
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+}
+.list-group {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+}
 
-/* CATEGORIAS */
+
+/**************CARD************/
+.cardOfertas {
+    padding: 0%;
+    /*margin-left: 20px;*/
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.cardOfertas:hover {
+    box-shadow:5px 5px 20px rgba(0,0,0,0.4);
+    transform: translate(-3%);
+}
+
+.card-body {
+    text-align: center;
+}
+.card-title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.btnCard {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: coral;
+    border: 1px solid coral;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 10px;
+    
+}
+
+.btnCard {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:coral;
+    border: 1px solid coral;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.btnCard:hover {
+    background: coral;
+    color: white;
+}
+
+.masOfertas {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.masOfertas a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: black;
+    
+}
+
 
 /* USA EN TU TIENDA */
 

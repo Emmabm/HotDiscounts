@@ -41,7 +41,254 @@
             </nav>
         </div>
     </header>
-   
+    <main class="container-fluid">
+        <div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Nación</p>
+                            <img class="botonesBanco"
+                                src="data:image/png;base64,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"
+                                alt="Banco Nación">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>    
+                </div>    
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Santander</p>
+                            <img class="botonesBanco" src="https://media.somospymes.com.ar/p/94cf228dd15d7e16ba2820039b918e48/adjuntos/356/imagenes/100/023/0100023839/790x0/smart/50f5d33565d6e2e3a24021d2dd326d1a_xljpg.jpg" alt="Banco Santander">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Galicia</p>
+                            <img class="botonesBanco" src="https://play-lh.googleusercontent.com/uxHZbrC3ReVDRMOAJuugukR4qlIFt1H3ho8L_67cYhLh9G_P0kUPAJtfX6L22hAxfHv4" alt="Banco Galicia ">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Naranja X</p>
+                            <img class="botonesBanco" src="data:image/png;base64,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" alt="Naranja X">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Mercado pago</p>
+                            <img class="botonesBanco" src="https://d2r9epyceweg5n.cloudfront.net/apps/5576-es_AR-Mercado%20Pago.jpg" alt="Mercado pago">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Ualá</p>
+                            <img class="botonesBanco" src="https://play-lh.googleusercontent.com/_5g7mBAWu-RSvDL111fe3cv_tl0x0xMUW8mCdJ2TXWc9CY6MhtNVzVrq0AhXJZEm558" alt="Ualá">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Nación</p>
+                            <img class="botonesBanco"
+                                src="data:image/png;base64,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"
+                                alt="Banco Nación">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>    
+                
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Santander</p>
+                            <img class="botonesBanco" src="https://media.somospymes.com.ar/p/94cf228dd15d7e16ba2820039b918e48/adjuntos/356/imagenes/100/023/0100023839/790x0/smart/50f5d33565d6e2e3a24021d2dd326d1a_xljpg.jpg" alt="Banco Santander">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Galicia</p>
+                            <img class="botonesBanco" src="https://play-lh.googleusercontent.com/uxHZbrC3ReVDRMOAJuugukR4qlIFt1H3ho8L_67cYhLh9G_P0kUPAJtfX6L22hAxfHv4" alt="Banco Galicia ">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Naranja X</p>
+                            <img class="botonesBanco" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAz1BMVEX////pUxRNJnXoSADpTgX4x7jufVb65d3oQgDpUAv44tftbz1KIXM6AGloSozh2efwhWHwlHP///xVMXtGG3D89O/y8fXugVz2uqdLJ3Q9Em3saTnzjWvpXCH9+/vrVxjwnoLwnXv89vH2rZbtdkn41czuckO5rMhzXpRsUpDb0eL10cDqPADuiV/wo4aNfanJvtPtYSv31sOQf6k+AHDp4+6ci6+tob5BDG+jlbV+aprSxtq8tMpmSYf3zLtYN373uKD0qJIjAF6CbZrvfU37BUp0AAAHuUlEQVR4nO2c62LSShRGkya2hEKrKWABSy9SelWrHirHKz31/Z/pCAmQzHxzqzP651s/CxldyWaYvWcPUUQIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghv8jzv/0/EBmdDHfrbH+3uKw5rl0z/LlT/P18Ioy2Oz6MjNIXl3sCV9e/6bXh5jYTSBsWiuO0flHypvj7MBGHyxpvTYO9a3daAoO93xVb8yyJRbKjM+Nlk6x+Tbpd/H07lYaLG039WHf/bEkMHj24FQDDOHlhvExluAOGy95rw7R30JINOz0vdguQYZx8MF2mMoxeozumjdOPA1lw9tWL3BJomA1HhsvGKsNoN5PHS3fUI12DGO1cerJbAA3j5MFwmdqwCQZMt5VxmsMYnXrzUxkaZwe1YfSA4vRQNdA9itFP3vQipWE21F+mMcyHIE6TLh5nf9aXBFvfPPopDeNkrr1MYxh9gHEKhxlddeRH2PYZo2rDTDc76A2jF2DMxjM0zKcZiNF/vQoqDVV3vWScat6dH8txmh2DOJ0CwdaeaR73ZRg3lLNDJK9d6vfjHMXpK3mUKzCPDvytSE2GytnBbBi9AIu3RFju5tFFGwh+9CyoM0yfP9mweywPlx0J4dcDs0yr7zlGtYZxAmcHG8PoWQMMJyx3P6N59ItvQa1hdqSM05cGQ+kNCxrn1Xd8BdPM4J13Qa2hJskwGnaBYTasLN56ByBGD/ylFHaGcXKuuMxoGB2iOK0kGe/k5VrfZ0phaZgdK5bMZkOYDCfr5e4XMI96TSksDePkBF/23Gy4g+J0srpje+irMECMGg1VcWphCJPhxrx4DX1TtC9CCBoN0wmMUxvDaIjitJsrDFtX5qJcCMM4ef1kwx0w2aze+E2K0pnflMLeME5QkmFlGL1FcVosd6/bQmI48Jr2Ohmm4ycbjlAyXCYZQgHKc9rrZAiTDDvD6EadZAhFxPb+XzREcfrKzjA6RXFaJBl3lVVbf3AfStDKMH35ZMP8CIyXFTX1x8182vrhPaVwMgRJhq1hdIPm02K529uE6cx/SqExBJODnGRYG0rvXN6xm+VLX1fF4BAphdowE0swy/+SWIIQk3i1YRcVbcqdjMsiToOkFGrDpCvOkwvEHTd7Q7z3c7J8adpZBmr7LqAgMNyBqZ1QgnAwlL5ZlnesSDKW1cTO55CCyDCaq+/6ChdDnAwXry0qwmFSijXIUKqGLv9eSzJOHQxxMlwsd/cHoVKKNdCwaSpBSN/k+vrxT3m8VU39vh0k7a0ADfE+ZzXJcHqGMBkur8gfA6UUa7Ah3j+qLN7cDPEd09XUPYINoyZaikw2lzka5uKu+PJf0tTUPaIwjE7QXZ+vL3M0VOwMB/TaoDIcvQdLkXgdp66GOBm+CWm2QmWIl8zrnYwTV8MIfLLT03BeG5SG+n3Ot86GYDvKom/HA2rDsyPUN1K2SzkbfkDf+n9kNlUbwv2j1T6n+LEyGebgdmVZuLS3gsYQ1+WLJMPVEE3NeGvfOzrDLmpSK9r6xK9wg6HttncIdIbRoTLJENuC9IY5agUrq4rXoUNVa4jjdJFkPDjNNGjRlpaV4f88N5dI6A3h/tGiBOEUpbrq/o/+IPDSW2+obKZ0MpzAHZrlS/ezfusqpJ/REC1FFiUIF0NYMpgvX9pflPbboXYsCkyGcMk8djGEyWGRpoyKHahQu052hvib7FCcZTWGqCsjqRSiQpeijIYwGT5+Lz4UpSHsrCkadKervfwgHQrWhnD/SCqMKw3hqqFssr5cbVy0tgKW28yGMMkQURqiYmnZKH+x2XzqBCzrWxieZSBOLQ2/48MOi7Jdb6uygRig28vBMPoOPkp2higDy46LGH2sNiu0WsEWbzaGcP/IyhAFeLnxdFffyPffdelkiPaPbAzRJJVIm4elou/OWSdDmGSYDVHaq2hUWLQqBIpTO0OYZBgN0SZ+WbkYyU1fvjvYHQ3R15rJEFaVy/dNUddXmHYMS8Norp9PgSFMe9Oyzj3akh9ioJYaW0OYAmkNYePeurp2P5APy/g9DeRsiJIMnaEiKVkT/ESXsyE8saUxRM88rZwXu/5TLbT2hjDJUBrCfd/amT94sjLAfrC9ISxbqwxxgaf2FnQ6tuXxdKy7Ya5LMuqGOT7xLLQb34HjCAGSYYdnCE9s4WeoLrRWAUdK+v57a1wMYS6EDHEflHQGvgc+iVve+6OcDNVJRt3wjbqXrcYfOdrlZti1eoYon8S7FJdo8eY5yXAzVDZrVg1hTSCDv9OAlqe+e00dDVVJRtUQHT5U7aR9AiedZ377hV0NFUlGxRD2dstdxiXyqYRf86nXJMPVUJFkbAzPQBOH5kcVpmCy8ZtkOBrmuK2vYqhJeyH36Di3zyTD+RnCtr6NIUx70YmNFSNwxqvvM8lwN4RJxtoQNsRpf4LiGi3ePCYZTzDMwSdtZQh/FONBf2QLJRltfzsZ0saJ2RBFYvZz+QqUN/zExq8kAxxk++HBraAb3zaq3E4svm/nSUOknEtOpRcau8ZbNt1rS3gsvHWbdcy/EQUuaq4txBeaTYtDhfl0XyB0Wy0hhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEPJX/AYuhjtHy1Ro3AAAAAElFTkSuQmCC" alt="Naranja X">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Mercado pago</p>
+                            <img class="botonesBanco" src="https://d2r9epyceweg5n.cloudfront.net/apps/5576-es_AR-Mercado%20Pago.jpg" alt="Mercado pago">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Ualá</p>
+                            <img class="botonesBanco" src="https://play-lh.googleusercontent.com/_5g7mBAWu-RSvDL111fe3cv_tl0x0xMUW8mCdJ2TXWc9CY6MhtNVzVrq0AhXJZEm558" alt="Ualá">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Nación</p>
+                            <img class="botonesBanco"
+                                src="data:image/png;base64,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"
+                                alt="Banco Nación">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Santander</p>
+                            <img class="botonesBanco" src="https://media.somospymes.com.ar/p/94cf228dd15d7e16ba2820039b918e48/adjuntos/356/imagenes/100/023/0100023839/790x0/smart/50f5d33565d6e2e3a24021d2dd326d1a_xljpg.jpg" alt="Banco Santander">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Banco Galicia</p>
+                            <img class="botonesBanco" src="https://play-lh.googleusercontent.com/uxHZbrC3ReVDRMOAJuugukR4qlIFt1H3ho8L_67cYhLh9G_P0kUPAJtfX6L22hAxfHv4" alt="Banco Galicia ">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Naranja X</p>
+                            <img class="botonesBanco" src="data:image/png;base64,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" alt="Naranja X">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Mercado pago</p>
+                            <img class="botonesBanco" src="https://d2r9epyceweg5n.cloudfront.net/apps/5576-es_AR-Mercado%20Pago.jpg" alt="Mercado pago">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="dropdown">
+                        <button class=" btn btn-secondary dropdown-toggle colorCard" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <p>Ualá</p>
+                            <img class="botonesBanco" src="https://play-lh.googleusercontent.com/_5g7mBAWu-RSvDL111fe3cv_tl0x0xMUW8mCdJ2TXWc9CY6MhtNVzVrq0AhXJZEm558" alt="Ualá">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Descuentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                
+    </main>
     <footer class="bg-light text-dark pt-5 pb-4">
         <div class="container-fluid text-center text-md-star">
             <div class="row mt-4">
